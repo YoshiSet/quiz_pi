@@ -290,12 +290,243 @@ public class Perguntas {
 				System.out.println("VOCÊ ERROU: " + errou);
 
 				break;
+				
 			case 3:
-				System.out.println("Modo dificil em desenvolvimento.");
-				break;
+				
+				System.out.println("\n1. A \"Massa de Chandrasekhar\" ou \"Limite de Chandrasekhar\" determina a massa "
+						+ "máxima que uma estrela anã branca pode ter antes de colapsar e se tornar uma estrela de nêutrons "
+						+ "ou um buraco negro. Qual é o valor aproximado desse limite em relação à massa do nosso Sol? \n");
 
-			default:
-				System.out.println("Erro!");
+				System.out.println(
+						
+				  "a) 1,02 massas solares. \n" 
+				+ "b) 1,44 massas solares. \n"
+				+ "c) 2,15 massas solares. \n" 
+				+ "d) 3,14 massas solares. \n"
+				+ "e) 4,60 massas solares. \n"
+				
+						);
+				
+				System.out.print("Digite sua resposta: ");
+				
+				do {
+					
+					ler = entrada.nextLine().toLowerCase().trim();
+					
+					if (ler.matches("[abcde]")) {
+						
+						resposta = ler.charAt(0);
+						
+					} else {
+						
+						System.out.print("Opção inválida! Digite apenas (a-e): ");
+						
+					}
+					
+				} while (!ler.matches("[abcde]"));
+
+				if (resposta == 'b') {
+					
+					acertou++;
+					
+					System.out.println("Resposta Correta!");
+					
+				} else {
+					
+					errou++;
+					
+					System.out.println("Resposta incorreta!");
+				}
+
+				System.out.println("\n2. Qual é o nome da montanha considerada o pico não escalado mais alto do mundo, "
+						+ "localizada na fronteira entre o Butão e a China, cujo acesso ao cume é proibido desde "
+						+ "1994 por respeito às crenças espirituais locais? \n");
+
+				System.out.println(
+						
+				  "a) Monte Kailash. \n" 
+				+ "b) Machapuchare. \n" 
+				+ "c) K2. \n"
+				+ "d) Annapurna III. \n" 
+				+ "e) Gangkhar Puensum. \n"
+				
+						);
+				
+				System.out.print("Digite sua resposta: ");
+				
+				do {
+					
+					ler = entrada.nextLine().toLowerCase().trim();
+					
+					if (ler.matches("[abcde]")) {
+						
+						resposta = ler.charAt(0);
+						
+					} else {
+						
+						System.out.print("Opção inválida! Digite apenas (a-e): ");
+						
+					}
+				} while (!ler.matches("[abcde]"));
+
+				if (resposta == 'e') {
+					
+					acertou++;
+					
+					System.out.println("Resposta Correta!");
+					
+				} else {
+					
+					errou++;
+					
+					System.out.println("Resposta incorreta!");
+					
+				}
+
+				System.out.println("\n3. A Pedra de Roseta foi crucial para decifrar os antigos hieróglifos egípcios. "
+						+ "O artefato contém um decreto do faraó Ptolomeu V escrito em três sistemas de escrita diferentes. "
+						+ "Além dos hieróglifos e do grego antigo, qual é a terceira grafia presente na pedra? \n");
+
+				System.out.println(
+						
+				  "a) Copta. \n" 
+				+ "b) Arameu. \n" 
+				+ "c) Demótico egípcio. \n"
+				+ "d) Cuneiforme acadiano. \n" 
+				+ "e) Fenício. \n"
+				
+						);
+				
+				System.out.print("Digite sua resposta: ");
+				
+				do {
+					
+					ler = entrada.nextLine().toLowerCase().trim();
+					
+					if (ler.matches("[abcde]")) {
+						
+						resposta = ler.charAt(0);
+						
+					} else {
+						
+						System.out.print("Opção inválida! Digite apenas (a-e): ");
+						
+					}
+				} while (!ler.matches("[abcde]"));
+
+				if (resposta == 'c') {
+					
+					acertou++;
+					
+					System.out.println("Resposta Correta!");
+					
+				} else {
+					
+					errou++;
+					
+					System.out.println("Resposta incorreta!");
+					
+				}
+
+				System.out.println("\n4. Em 1926, o químico James B. Sumner alcançou um marco histórico na bioquímica "
+						+ "ao isolar e cristalizar a primeira enzima da história, provando definitivamente que as "
+						+ "enzimas são proteínas (um feito que lhe rendeu o Prêmio Nobel). Qual foi essa enzima? \n");
+
+				System.out.println(
+						
+				  "A) Amilase. \n" 
+				+ "B) Pepsina. \n"
+				+ "C) Catalase. \n" 
+				+ "D) Urease. \n"
+				+ "E) Lisozima. \n"
+				
+						);
+				
+				System.out.print("Digite sua resposta: ");
+				
+				do {
+					
+					ler = entrada.nextLine().toLowerCase().trim();
+					
+					if (ler.matches("[abcde]")) {
+						
+						resposta = ler.charAt(0);
+						
+					} else {
+						
+						System.out.print("Opção inválida! Digite apenas (a-e): ");
+						
+					}
+					
+				} while (!ler.matches("[abcde]"));
+
+				if (resposta == 'd') {
+					
+					acertou++;
+					
+					System.out.println("Resposta Correta!");
+					
+				} else {
+					
+					errou++;
+					
+					System.out.println("Resposta incorreta!");
+					
+				}
+
+				System.out.println("\n5. O célebre e misterioso \"Manuscrito Voynich\" é um códice ilustrado escrito em um "
+						+ "alfabeto até hoje não decifrado por criptógrafos. Através de exames de datação por radiocarbono "
+						+ "feitos no pergaminho das páginas, os cientistas descobriram que o material foi fabricado no início "
+						+ "de qual século? \n");
+
+				System.out.println(
+						
+					  "A) Século XII. \n"
+					+ "B) Século XIII. \n"
+					+ "C) Século XIV. \n"
+					+ "D) Século XV. \n"
+					+ "E) Século XVI. \n"
+					
+						);
+				
+				System.out.print("Digite sua resposta: ");
+				
+				do {
+					
+					ler = entrada.nextLine().toLowerCase().trim();
+					
+					if (ler.matches("[abcde]")) {
+						
+						resposta = ler.charAt(0);
+						
+					} else {
+						
+						System.out.print("Opção inválida! Digite apenas (a-e): ");
+						
+					}
+					
+				} while (!ler.matches("[abcde]"));
+
+				if (resposta == 'd') {
+					
+					acertou++;
+					
+					System.out.println("Resposta Correta!");
+					
+				} else {
+					
+					errou++;
+					
+					System.out.println("Resposta incorreta!");
+					
+				}
+
+				System.out.printf("PARABÉNS POR TER CHEGADO ATÉ O FINAL!\n");
+				System.out.println("");
+				System.out.println("VOCÊ ACERTOU: " + acertou);
+				System.out.println("VOCÊ ERROU: " + errou);
+
+				break;
 
 			}
 
@@ -306,6 +537,7 @@ public class Perguntas {
 			// -------------VALIDACAO DE RESPOSTA-------------------
 
 			do {
+				
 				ler = entrada.nextLine().trim();
 
 				if (ler.matches("[12]")) {
@@ -313,7 +545,9 @@ public class Perguntas {
 					op1 = Integer.parseInt(ler);
 
 				} else {
+					
 					System.out.println("Opcao invalida! Digite 1 ou 2:");
+					
 				}
 
 			} while (!ler.matches("[12]"));
