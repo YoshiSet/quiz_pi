@@ -10,7 +10,6 @@ public class Perguntas {
 		
 		//-----------------VARIAVEIS UTILZADAS-----------------------
 		
-		int pontos = 0;
 		int acertou = 0;
 		int errou = 0;
 		int op1 = 0;
@@ -23,8 +22,6 @@ public class Perguntas {
 		
 		
 		do {
-			
-			pontos = 0;
 			acertou = 0;
 			errou = 0;
 			op1 = 0;
@@ -37,11 +34,8 @@ public class Perguntas {
 	    ler = entrada.nextLine();
 	    
 	    if(!ler.matches("[123]")) {
-	    	
 	    	System.out.println("Opção Inválida!");
-	    	
 	    }else {
-	
 	    	opcao = Integer.parseInt(ler);
 	    }
 	    
@@ -58,7 +52,6 @@ public class Perguntas {
 					+ "d) Belo Horizonte\n"
 					+ "e) Salvador\n");
 			System.out.print("Digite sua resposta: ");
-			entrada.nextLine(); 
 			do {
 			    ler = entrada.nextLine().toLowerCase().trim();
 			    if(ler.matches("[abcde]")) {
@@ -69,17 +62,11 @@ public class Perguntas {
 			} while(!ler.matches("[abcde]"));
 			
 			if(resposta == 'c') {
-				
 				acertou++;
 				System.out.println("Resposta Correta!");
-				System.out.println("\nPontuação atual: " + pontos );
-				
 			}else {
-				
 				errou++;
 				System.out.println("Resposta incorreta!");
-				System.out.println("\nPontuação atual: " + pontos );
-			
 			}
 			
             System.out.println("\n2.Quantos Planetas existem no sistema solar? \n");
@@ -90,7 +77,6 @@ public class Perguntas {
 					+ "d) 10\n"
 					+ "e) 6\n");
 			System.out.print("Digite sua resposta: ");
-			entrada.nextLine(); 
 			do {
 			    ler = entrada.nextLine().toLowerCase().trim();
 			    if(ler.matches("[abcde]")) {
@@ -101,17 +87,11 @@ public class Perguntas {
 			} while(!ler.matches("[abcde]"));
 			
 			if(resposta == 'b') {
-				
 				acertou++;
 				System.out.println("Resposta Correta!");
-				System.out.println("\nPontuação atual: " + pontos );
-				
 			}else {
-				
 				errou++;
 				System.out.println("Resposta incorreta!");
-				System.out.println("\nPontuação atual: " + pontos );
-			
 			}
 			
 			System.out.println("\n3.Em que ano o homem pisou na Lua pela primeira vez? \n");
@@ -122,7 +102,6 @@ public class Perguntas {
 					+ "d) 1967\n"
 					+ "e) 1973\n");
 			System.out.print("Digite sua resposta: ");
-			entrada.nextLine(); 
 			do {
 			    ler = entrada.nextLine().toLowerCase().trim();
 			    if(ler.matches("[abcde]")) {
@@ -133,17 +112,11 @@ public class Perguntas {
 			} while(!ler.matches("[abcde]"));
 			
 			if(resposta == 'c') {
-				
 				acertou++;
 				System.out.println("Resposta Correta!");
-				System.out.println("\nPontuação atual: " + pontos );
-				
 			}else {
-				
 				errou++;
 				System.out.println("Resposta incorreta!");
-				System.out.println("\nPontuação atual: " + pontos );
-			
 			}
 			
             System.out.println("\n4.Qual é o maior oceano do mundo? \n");
@@ -153,8 +126,7 @@ public class Perguntas {
 					+ "c) Ártico\n"
 					+ "d) Antártico\n"
 					+ "e) Pacífico\n");
-			System.out.print("Digite sua resposta: ");
-			entrada.nextLine(); 
+			System.out.print("Digite sua resposta: "); 
 			do {
 			    ler = entrada.nextLine().toLowerCase().trim();
 			    if(ler.matches("[abcde]")) {
@@ -165,17 +137,11 @@ public class Perguntas {
 			} while(!ler.matches("[abcde]"));
 			
 			if(resposta == 'e') {
-				
 				acertou++;
 				System.out.println("Resposta Correta!");
-				System.out.println("\nPontuação atual: " + pontos );
-				
 			}else {
-				
 				errou++;
 				System.out.println("Resposta incorreta!");
-				System.out.println("\nPontuação atual: " + pontos );
-			
 			}
 			
 			System.out.println("\n5.Quantos lados tem um hexágono? \n");
@@ -185,8 +151,7 @@ public class Perguntas {
 					+ "c) 8\n"
 					+ "d) 6\n"
 					+ "e) 4\n");
-			System.out.print("Digite sua resposta: ");
-			entrada.nextLine(); 
+			System.out.print("Digite sua resposta: "); 
 			do {
 			    ler = entrada.nextLine().toLowerCase().trim();
 			    if(ler.matches("[abcde]")) {
@@ -197,17 +162,11 @@ public class Perguntas {
 			} while(!ler.matches("[abcde]"));
 			
 			if(resposta == 'd') {
-				
 				acertou++;
 				System.out.println("Resposta Correta!");
-				System.out.println("\nPontuação atual: " + pontos );
-				
 			}else {
-				
 				errou++;
 				System.out.println("Resposta incorreta!");
-				System.out.println("\nPontuação atual: " + pontos );
-			
 			}
 			
 			
@@ -226,7 +185,6 @@ public class Perguntas {
 					+ "d) A Crise dos Mísseis em Cuba.\n"
 					+ "e) A queda da Bastilha.\n");
 			System.out.print("Digite sua resposta: ");
-			entrada.nextLine(); 
 			do {
 			    ler = entrada.nextLine().toLowerCase().trim();
 			    if(ler.matches("[abcde]")) {
@@ -237,17 +195,11 @@ public class Perguntas {
 			} while(!ler.matches("[abcde]"));
 			
 			if(resposta == 'a') {
-				
 				acertou++;
 				System.out.println("Resposta Correta!");
-				System.out.println("\nPontuação atual: " + pontos );
-				
 			}else {
-				
 				errou++;
 				System.out.println("Resposta incorreta!");
-				System.out.println("\nPontuação atual: " + pontos );
-			
 			}
 			
             System.out.println("\n2.Qual evento histórico, ocorrido em 1989, simbolizou o fim da Guerra Fria e a futura reunificação da Alemanha?? \n");
@@ -257,8 +209,7 @@ public class Perguntas {
 					+ "c) Linus Torvalds.\n"
 					+ "d) Mark Zuckerberg.\n"
 					+ "e) Richard Stallman.\n");
-			System.out.print("Digite sua resposta: ");
-			entrada.nextLine(); 
+			System.out.print("Digite sua resposta: "); 
 			do {
 			    ler = entrada.nextLine().toLowerCase().trim();
 			    if(ler.matches("[abcde]")) {
@@ -269,17 +220,11 @@ public class Perguntas {
 			} while(!ler.matches("[abcde]"));
 			
 			if(resposta == 'b') {
-				
 				acertou++;
 				System.out.println("Resposta Correta!");
-				System.out.println("\nPontuação atual: " + pontos );
-				
 			}else {
-				
 				errou++;
 				System.out.println("Resposta incorreta!");
-				System.out.println("\nPontuação atual: " + pontos );
-			
 			}
 			
 			System.out.println("\n3.Em um buraco negro, como se chama a fronteira teórica a partir da qual a velocidade de escape necessária excede a velocidade da luz, tornando impossível o retorno de qualquer matéria ou informação?? \n");
@@ -290,7 +235,6 @@ public class Perguntas {
 					+ "d) Esfera de Dyson.\n"
 					+ "e) Limite de Chandrasekhar.\n");
 			System.out.print("Digite sua resposta: ");
-			entrada.nextLine(); 
 			do {
 			    ler = entrada.nextLine().toLowerCase().trim();
 			    if(ler.matches("[abcde]")) {
@@ -301,28 +245,21 @@ public class Perguntas {
 			} while(!ler.matches("[abcde]"));
 			
 			if(resposta == 'c') {
-				
 				acertou++;
 				System.out.println("Resposta Correta!");
-				System.out.println("\nPontuação atual: " + pontos );
-				
 			}else {
-				
 				errou++;
 				System.out.println("Resposta incorreta!");
-				System.out.println("\nPontuação atual: " + pontos );
-			
 			}
 			
-            System.out.println("\n4. Qual é o maior oceano do mundo? \n");
+            System.out.println("\n4.Qual conceito fundamental do existencialismo de Jean-Paul Sartre afirma que o ser humano não possui um destino ou natureza pré-determinada, sendo responsável por criar seu próprio sentido através de suas escolhas?? \n");
 			
-			System.out.println("a) Atlântico\n"
-					+ "b) Índico\n"
-					+ "c) Ártico\n"
-					+ "d) Antártico\n"
-					+ "e) Pacífico\n");
+			System.out.println("a) O Imperativo Categórico.\n"
+					+ "b) A Existência Precede a Essência.\n"
+					+ "c) O Eterno Retorno.\n"
+					+ "d) A Sociedade do Espetáculo.\n"
+					+ "e) O Super-Homem (Übermensch).\n");
 			System.out.print("Digite sua resposta: ");
-			entrada.nextLine(); 
 			do {
 			    ler = entrada.nextLine().toLowerCase().trim();
 			    if(ler.matches("[abcde]")) {
@@ -332,29 +269,22 @@ public class Perguntas {
 			    }
 			} while(!ler.matches("[abcde]"));
 			
-			if(resposta == 'e') {
-				
+			if(resposta == 'b') {
 				acertou++;
 				System.out.println("Resposta Correta!");
-				System.out.println("\nPontuação atual: " + pontos );
-				
 			}else {
-				
 				errou++;
 				System.out.println("Resposta incorreta!");
-				System.out.println("\nPontuação atual: " + pontos );
-			
 			}
 			
-			System.out.println("\n5. Quantos lados tem um hexágono? \n");
+			System.out.println("\n5.Qual foi o principal objetivo do Pacto de Varsóvia, assinado em 1955 durante a Guerra Fria?? \n");
 			
-			System.out.println("a) 5\n"
-					+ "b) 7\n"
-					+ "c) 8\n"
-					+ "d) 6\n"
-					+ "e) 4\n");
+			System.out.println("a) Estabelecer o Plano Marshall para a reconstrução da Europa.\n"
+					+ "b) Unificar economicamente os países da Europa Ocidental.\n"
+					+ "c) Criar uma aliança militar entre a União Soviética e seus estados satélites em resposta à OTAN.\n"
+					+ "d) Formalizar a rendição da Alemanha Nazista.\n"
+					+ "e) Proibir o uso de armas nucleares em território asiático.\n");
 			System.out.print("Digite sua resposta: ");
-			entrada.nextLine(); 
 			do {
 			    ler = entrada.nextLine().toLowerCase().trim();
 			    if(ler.matches("[abcde]")) {
@@ -365,17 +295,11 @@ public class Perguntas {
 			} while(!ler.matches("[abcde]"));
 			
 			if(resposta == 'd') {
-				
 				acertou++;
 				System.out.println("Resposta Correta!");
-				System.out.println("\nPontuação atual: " + pontos );
-				
 			}else {
-				
 				errou++;
 				System.out.println("Resposta incorreta!");
-				System.out.println("\nPontuação atual: " + pontos );
-			
 			}
 			
 			
@@ -400,7 +324,7 @@ public class Perguntas {
 		System.out.println("1.Reiniciar\n2.Encerrar");
 		System.out.print("Qual opção: ");
 		
-		//-------------VALIDACAO DE RESPOTA-------------------
+		//-------------VALIDACAO DE RESPOSTA-------------------
 		
 		do {
 		ler = entrada.nextLine().trim();
@@ -410,7 +334,7 @@ public class Perguntas {
 			op1 = Integer.parseInt(ler);
 			
 		}else {
-			System.out.println("Opcao invalida! Digite 1 ou 2");
+			System.out.println("Opcao invalida! Digite 1 ou 2:");
 		}
 		
 		}while(!ler.matches("[12]"));
