@@ -556,7 +556,7 @@ public class Perguntas {
 
 		} while (op1 == 1);
 
-		System.out.println("Ocorreu tudo certo!");
+		System.out.println("\nPrograma Encerrado!");
 
 		entrada.close();
 
