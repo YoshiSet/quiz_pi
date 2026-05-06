@@ -30,17 +30,24 @@ public class Perguntas {
 
 			do {
 				
-				System.out.println("BEM VINDO AO QUIZ, VOCÊ SABIA?");
-				System.out.print("\n1. Facíl\n2. Médio\n3. Dificíl\nEscolha a dificuladade:");
+				System.out.println("BEM VINDO AO QUIZ, (VOCÊ SABIA?)");
+				System.out.print("\n1. "
+						
+						+ "-- 1. Facíl --\n2. "
+						+ "-- 2. Médio --\n3. "
+						+ "-- 3. Dificíl --\n"
+						
+						+ "Escolha a dificuladade:");
+				
 				ler = entrada.nextLine();
 
-				if (!ler.matches("[123]")) {
+				if (!ler.matches("[123]")) {  // <---------- REGEX:  verifica se a String ler contém exatamente um dos caracteres: 1, 2 ou 3, e retorna true ou false.
 					
 					System.out.println("Opção Inválida!");
 					
 				} else {
 					
-					opcao = Integer.parseInt(ler);
+					opcao = Integer.parseInt(ler);  // <----------  converte uma String em um número inteiro, pois não é possivel comparar String com Inteiro.
 					
 				}
 
@@ -50,111 +57,214 @@ public class Perguntas {
 			switch (opcao) {
 			
 			case 1:
+				
 				System.out.println("1.Qual a Capital do Brasil? \n");
 
-				System.out.println("a) São Paulo\n" + "b) Rio de Janeiro\n" + "c) Brasília\n" + "d) Belo Horizonte\n"
-						+ "e) Salvador\n");
+				System.out.println(""
+						+ ""
+						+ "a) São Paulo\n" 
+						+ "b) Rio de Janeiro\n" 
+						+ "c) Brasília\n" 
+						+ "d) Belo Horizonte\n"
+						+ "e) Salvador\n"
+						
+						);
+				
 				System.out.print("Digite sua resposta: ");
+				
 				do {
-					ler = entrada.nextLine().toLowerCase().trim();
+					
+					ler = entrada.nextLine().toLowerCase().trim();  /*<------- o ".trim()" Remove os espaços em branco do início e do fim de uma String.
+					 														   Já o ".toLowerCase()" converte todos os caracteres de uma String para letras minúsculas.*/
+					
 					if (ler.matches("[abcde]")) {
-						resposta = ler.charAt(0);
+						
+						resposta = ler.charAt(0); //<---- ".charAt()" retorna o caractere que está em uma posição específica da String, na posição 0 ele pega a primeira letra.
+						
 					} else {
+						
 						System.out.print("Opção inválida! Digite apenas (a-e): ");
+						
 					}
+					
 				} while (!ler.matches("[abcde]"));
 
 				if (resposta == 'c') {
+					
 					acertou++;
 					System.out.println("Resposta Correta!");
+					
 				} else {
+					
 					errou++;
 					System.out.println("Resposta incorreta!");
+					
 				}
 
 				System.out.println("\n2.Quantos Planetas existem no sistema solar? \n");
 
-				System.out.println("a) 7\n" + "b) 8\n" + "c) 9\n" + "d) 10\n" + "e) 6\n");
+				System.out.println(""
+						
+						+ "a) 7\n" 
+						+ "b) 8\n" 
+						+ "c) 9\n" 
+						+ "d) 10\n" 
+						+ "e) 6\n"
+						
+						);
 				System.out.print("Digite sua resposta: ");
+				
 				do {
+					
 					ler = entrada.nextLine().toLowerCase().trim();
+					
 					if (ler.matches("[abcde]")) {
+						
 						resposta = ler.charAt(0);
+						
 					} else {
+						
 						System.out.print("Opção inválida! Digite apenas (a-e): ");
+						
 					}
+					
 				} while (!ler.matches("[abcde]"));
-
+				
 				if (resposta == 'b') {
+					
 					acertou++;
 					System.out.println("Resposta Correta!");
+					
 				} else {
+					
 					errou++;
 					System.out.println("Resposta incorreta!");
+					
 				}
 
 				System.out.println("\n3.Em que ano o homem pisou na Lua pela primeira vez? \n");
 
-				System.out.println("a) 1965\n" + "b) 1971\n" + "c) 1969\n" + "d) 1967\n" + "e) 1973\n");
+				System.out.println(""
+						
+						+ "a) 1965\n" 
+						+ "b) 1971\n" 
+						+ "c) 1969\n" 
+						+ "d) 1967\n" 
+						+ "e) 1973\n"
+						
+						);
+				
 				System.out.print("Digite sua resposta: ");
+				
 				do {
+					
 					ler = entrada.nextLine().toLowerCase().trim();
+					
 					if (ler.matches("[abcde]")) {
+						
 						resposta = ler.charAt(0);
+						
 					} else {
+						
 						System.out.print("Opção inválida! Digite apenas (a-e): ");
+						
 					}
+					
 				} while (!ler.matches("[abcde]"));
 
 				if (resposta == 'c') {
+					
 					acertou++;
 					System.out.println("Resposta Correta!");
+					
 				} else {
+					
 					errou++;
 					System.out.println("Resposta incorreta!");
+					
 				}
 
 				System.out.println("\n4.Qual é o maior oceano do mundo? \n");
 
-				System.out
-						.println("a) Atlântico\n" + "b) Índico\n" + "c) Ártico\n" + "d) Antártico\n" + "e) Pacífico\n");
+				System.out.println(""
+						
+						+ "a) Atlântico\n" 
+						+ "b) Índico\n" 
+						+ "c) Ártico\n" 
+						+ "d) Antártico\n" 
+						+ "e) Pacífico\n"
+						
+						);
+				
 				System.out.print("Digite sua resposta: ");
+				
 				do {
+					
 					ler = entrada.nextLine().toLowerCase().trim();
+					
 					if (ler.matches("[abcde]")) {
+						
 						resposta = ler.charAt(0);
+						
 					} else {
+						
 						System.out.print("Opção inválida! Digite apenas (a-e): ");
+						
 					}
+					
 				} while (!ler.matches("[abcde]"));
 
 				if (resposta == 'e') {
+					
 					acertou++;
 					System.out.println("Resposta Correta!");
+					
 				} else {
+					
 					errou++;
 					System.out.println("Resposta incorreta!");
+					
 				}
 
 				System.out.println("\n5.Quantos lados tem um hexágono? \n");
 
-				System.out.println("a) 5\n" + "b) 7\n" + "c) 8\n" + "d) 6\n" + "e) 4\n");
+				System.out.println(""
+						+ "a) 5\n" 
+						+ "b) 7\n" 
+						+ "c) 8\n" 
+						+ "d) 6\n" 
+						+ "e) 4\n"
+						
+						);
+				
 				System.out.print("Digite sua resposta: ");
+				
 				do {
+					
 					ler = entrada.nextLine().toLowerCase().trim();
+					
 					if (ler.matches("[abcde]")) {
+						
 						resposta = ler.charAt(0);
+						
 					} else {
+						
 						System.out.print("Opção inválida! Digite apenas (a-e): ");
+						
 					}
+					
 				} while (!ler.matches("[abcde]"));
 
 				if (resposta == 'd') {
+					
 					acertou++;
 					System.out.println("Resposta Correta!");
+					
 				} else {
+					
 					errou++;
 					System.out.println("Resposta incorreta!");
+					
 				}
 
 				System.out.printf("PARABÉNS POR TER CHEGADO ATÉ O FINAL!\n");
@@ -163,125 +273,217 @@ public class Perguntas {
 				System.out.println("VOCÊ ERROU: " + errou);
 
 				break;
+				
 			case 2:
-				System.out.println(
-						"1.Qual evento histórico, ocorrido em 1989, simbolizou o fim da Guerra Fria e a futura reunificação da Alemanha?? \n");
+				
+				System.out.println("1.Qual evento histórico, ocorrido em 1989, simbolizou o fim da Guerra Fria e a futura reunificação da Alemanha?? \n");
 
-				System.out.println("a) A queda do muro de Berlim.\n" + "b) A assinatura do tratado de Versalhes.\n"
-						+ "c) A Revolução Russa.\n" + "d) A Crise dos Mísseis em Cuba.\n"
-						+ "e) A queda da Bastilha.\n");
+				System.out.println(""
+						
+						+ "a) A queda do muro de Berlim.\n" 
+						+ "b) A assinatura do tratado de Versalhes.\n"
+						+ "c) A Revolução Russa.\n" 
+						+ "d) A Crise dos Mísseis em Cuba.\n"
+						+ "e) A queda da Bastilha.\n"
+						
+						);
+				
 				System.out.print("Digite sua resposta: ");
+				
 				do {
+					
 					ler = entrada.nextLine().toLowerCase().trim();
+					
 					if (ler.matches("[abcde]")) {
+						
 						resposta = ler.charAt(0);
+						
 					} else {
+						
 						System.out.print("Opção inválida! Digite apenas (a-e): ");
+						
 					}
+					
 				} while (!ler.matches("[abcde]"));
 
 				if (resposta == 'a') {
+					
 					acertou++;
 					System.out.println("Resposta Correta!");
+					
 				} else {
+					
 					errou++;
 					System.out.println("Resposta incorreta!");
+					
 				}
 
-				System.out.println(
-						"\n2.Qual evento histórico, ocorrido em 1989, simbolizou o fim da Guerra Fria e a futura reunificação da Alemanha?? \n");
+				System.out.println("\n2.Qual evento histórico, ocorrido em 1989, simbolizou o fim da Guerra Fria e a futura reunificação da Alemanha?? \n");
 
-				System.out.println("a) Bil Gates\n" + "b) Steve Jobs.\n" + "c) Linus Torvalds.\n"
-						+ "d) Mark Zuckerberg.\n" + "e) Richard Stallman.\n");
+				System.out.println(""
+						
+						+ "a) Bil Gates\n" 
+						+ "b) Steve Jobs.\n" 
+						+ "c) Linus Torvalds.\n"
+						+ "d) Mark Zuckerberg.\n" 
+						+ "e) Richard Stallman.\n"
+						
+						);
+				
 				System.out.print("Digite sua resposta: ");
+				
 				do {
+					
 					ler = entrada.nextLine().toLowerCase().trim();
+					
 					if (ler.matches("[abcde]")) {
+						
 						resposta = ler.charAt(0);
+						
 					} else {
+						
 						System.out.print("Opção inválida! Digite apenas (a-e): ");
+						
 					}
+					
 				} while (!ler.matches("[abcde]"));
 
 				if (resposta == 'b') {
+					
 					acertou++;
 					System.out.println("Resposta Correta!");
+					
 				} else {
+					
 					errou++;
 					System.out.println("Resposta incorreta!");
+					
 				}
 
-				System.out.println(
-						"\n3.Em um buraco negro, como se chama a fronteira teórica a partir da qual a velocidade de escape necessária excede a velocidade da luz, tornando impossível o retorno de qualquer matéria ou informação?? \n");
+				System.out.println("\n3.Em um buraco negro, como se chama a fronteira teórica a partir da qual a velocidade de escape necessária excede a velocidade da luz, tornando impossível o retorno de qualquer matéria ou informação?? \n");
 
-				System.out.println("a) Singularidade.\n" + "b) Cinturão de Kuiper.\n" + "c) Horizonte de Eventos.\n"
-						+ "d) Esfera de Dyson.\n" + "e) Limite de Chandrasekhar.\n");
+				System.out.println(""
+						
+						+ "a) Singularidade.\n" 
+						+ "b) Cinturão de Kuiper.\n" 
+						+ "c) Horizonte de Eventos.\n"
+						+ "d) Esfera de Dyson.\n" 
+						+ "e) Limite de Chandrasekhar.\n"
+						
+						);
+				
 				System.out.print("Digite sua resposta: ");
+				
 				do {
+					
 					ler = entrada.nextLine().toLowerCase().trim();
+					
 					if (ler.matches("[abcde]")) {
+						
 						resposta = ler.charAt(0);
+						
 					} else {
+						
 						System.out.print("Opção inválida! Digite apenas (a-e): ");
+						
 					}
+					
 				} while (!ler.matches("[abcde]"));
 
 				if (resposta == 'c') {
+					
 					acertou++;
 					System.out.println("Resposta Correta!");
+					
 				} else {
+					
 					errou++;
 					System.out.println("Resposta incorreta!");
+					
 				}
 
-				System.out.println(
-						"\n4.Qual conceito fundamental do existencialismo de Jean-Paul Sartre afirma que o ser humano não possui um destino ou natureza pré-determinada, sendo responsável por criar seu próprio sentido através de suas escolhas?? \n");
+				System.out.println("\n4.Qual conceito fundamental do existencialismo de Jean-Paul Sartre afirma que o ser humano não possui um destino ou natureza pré-determinada, sendo responsável por criar seu próprio sentido através de suas escolhas?? \n");
 
-				System.out.println("a) O Imperativo Categórico.\n" + "b) A Existência Precede a Essência.\n"
-						+ "c) O Eterno Retorno.\n" + "d) A Sociedade do Espetáculo.\n"
-						+ "e) O Super-Homem (Übermensch).\n");
+				System.out.println(""
+						
+						+ "a) O Imperativo Categórico.\n" 
+						+ "b) A Existência Precede a Essência.\n"
+						+ "c) O Eterno Retorno.\n" 
+						+ "d) A Sociedade do Espetáculo.\n"
+						+ "e) O Super-Homem (Übermensch).\n"
+						
+						);
+				
 				System.out.print("Digite sua resposta: ");
+				
 				do {
+					
 					ler = entrada.nextLine().toLowerCase().trim();
+					
 					if (ler.matches("[abcde]")) {
+					
 						resposta = ler.charAt(0);
+						
 					} else {
+						
 						System.out.print("Opção inválida! Digite apenas (a-e): ");
+						
 					}
+					
 				} while (!ler.matches("[abcde]"));
 
 				if (resposta == 'b') {
+					
 					acertou++;
 					System.out.println("Resposta Correta!");
+					
 				} else {
+					
 					errou++;
 					System.out.println("Resposta incorreta!");
+					
 				}
 
-				System.out.println(
-						"\n5.Qual foi o principal objetivo do Pacto de Varsóvia, assinado em 1955 durante a Guerra Fria?? \n");
+				System.out.println("\n5.Qual foi o principal objetivo do Pacto de Varsóvia, assinado em 1955 durante a Guerra Fria?? \n");
 
-				System.out.println("a) Estabelecer o Plano Marshall para a reconstrução da Europa.\n"
+				System.out.println(""
+						
+						+ "a) Estabelecer o Plano Marshall para a reconstrução da Europa.\n"
 						+ "b) Unificar economicamente os países da Europa Ocidental.\n"
 						+ "c) Criar uma aliança militar entre a União Soviética e seus estados satélites em resposta à OTAN.\n"
 						+ "d) Formalizar a rendição da Alemanha Nazista.\n"
-						+ "e) Proibir o uso de armas nucleares em território asiático.\n");
+						+ "e) Proibir o uso de armas nucleares em território asiático.\n"
+						
+						);
+				
 				System.out.print("Digite sua resposta: ");
+				
 				do {
+					
 					ler = entrada.nextLine().toLowerCase().trim();
+					
 					if (ler.matches("[abcde]")) {
+						
 						resposta = ler.charAt(0);
+						
 					} else {
+						
 						System.out.print("Opção inválida! Digite apenas (a-e): ");
+						
 					}
+					
 				} while (!ler.matches("[abcde]"));
 
 				if (resposta == 'd') {
+					
 					acertou++;
 					System.out.println("Resposta Correta!");
+					
 				} else {
+					
 					errou++;
 					System.out.println("Resposta incorreta!");
+					
 				}
 
 				System.out.printf("PARABÉNS POR TER CHEGADO ATÉ O FINAL!\n");
@@ -328,14 +530,13 @@ public class Perguntas {
 				if (resposta == 'b') {
 					
 					acertou++;
-					
 					System.out.println("Resposta Correta!");
 					
 				} else {
 					
 					errou++;
-					
 					System.out.println("Resposta incorreta!");
+					
 				}
 
 				System.out.println("\n2. Qual é o nome da montanha considerada o pico não escalado mais alto do mundo, "
@@ -367,18 +568,17 @@ public class Perguntas {
 						System.out.print("Opção inválida! Digite apenas (a-e): ");
 						
 					}
+					
 				} while (!ler.matches("[abcde]"));
 
 				if (resposta == 'e') {
 					
 					acertou++;
-					
 					System.out.println("Resposta Correta!");
 					
 				} else {
 					
 					errou++;
-					
 					System.out.println("Resposta incorreta!");
 					
 				}
@@ -412,18 +612,17 @@ public class Perguntas {
 						System.out.print("Opção inválida! Digite apenas (a-e): ");
 						
 					}
+					
 				} while (!ler.matches("[abcde]"));
 
 				if (resposta == 'c') {
 					
 					acertou++;
-					
 					System.out.println("Resposta Correta!");
 					
 				} else {
 					
 					errou++;
-					
 					System.out.println("Resposta incorreta!");
 					
 				}
@@ -463,13 +662,11 @@ public class Perguntas {
 				if (resposta == 'd') {
 					
 					acertou++;
-					
 					System.out.println("Resposta Correta!");
 					
 				} else {
 					
 					errou++;
-					
 					System.out.println("Resposta incorreta!");
 					
 				}
@@ -510,13 +707,11 @@ public class Perguntas {
 				if (resposta == 'd') {
 					
 					acertou++;
-					
 					System.out.println("Resposta Correta!");
 					
 				} else {
 					
 					errou++;
-					
 					System.out.println("Resposta incorreta!");
 					
 				}
@@ -556,7 +751,7 @@ public class Perguntas {
 
 		} while (op1 == 1);
 
-		System.out.println("\nPrograma Encerrado!");
+		System.out.println("Ocorreu tudo certo!");
 
 		entrada.close();
 
