@@ -91,21 +91,28 @@ public class funcoes_quiz {
 
         String[][] perguntas = {
 
-                {"1.Qual a Capital do Brasil?", "a) São Paulo", "b) Rio de Janeiro", "c) Brasília", "d) Belo Horizonte", "e) Salvador", "c", "10"},
-                {"2.Quantos Planetas existem no sistema solar?", "a) 7", "b) 8", "c) 9", "d) 10", "e) 6", "b", "10"},
-                {"3.Em que ano o homem pisou na Lua pela primeira vez?", "a) 1965","b) 1971", "c) 1969", "d) 1967","e) 1973", "c", "15"},
-                {"4.Qual é o maior oceano do mundo?", "a) Atlântico", "b) Índico", "c) Ártico","d) Antártico", "e) Pacífico", "e", "10"},
-                {"5.Quantos lados tem um hexágono?", "a) 5", "b) 7", "c) 8", "d) 6", "e) 4", "d", "10"},
-                {"6.Qual evento histórico, ocorrido em 1989, simbolizou o fim da Guerra Fria e a futura reunificação da Alemanha?", "a) A queda do muro de Berlim.", "b) A assinatura do tratado de Versalhes.","c) A Revolução Russa.", "d) A Crise dos Mísseis em Cuba.", "e) A queda da Bastilha.", "a", "10"}
-                //{""},
+                {"Qual a Capital do Brasil?", "a) São Paulo", "b) Rio de Janeiro", "c) Brasília", "d) Belo Horizonte", "e) Salvador", "c", "5"},
+                {"Quantos Planetas existem no sistema solar?", "a) 7", "b) 8", "c) 9", "d) 10", "e) 6", "b", "5"},
+                {"Em que ano o homem pisou na Lua pela primeira vez?", "a) 1965","b) 1971", "c) 1969", "d) 1967","e) 1973", "c", "5"},
+                {"Qual é o maior oceano do mundo?", "a) Atlântico", "b) Índico", "c) Ártico","d) Antártico", "e) Pacífico", "e", "5"},
+                {"Quantos lados tem um hexágono?", "a) 5", "b) 7", "c) 8", "d) 6", "e) 4", "d", "5"},
+                {"Qual evento histórico, ocorrido em 1989, simbolizou o fim da Guerra Fria e a futura reunificação da Alemanha?", "a) A queda do muro de Berlim.", "b) A assinatura do tratado de Versalhes.","c) A Revolução Russa.", "d) A Crise dos Mísseis em Cuba.", "e) A queda da Bastilha.", "a", "5"},
+                {"Qual é o maior planeta do Sistema Solar","a) Terra","b) Marte", "c) Júpiter","d) Saturno","e) Netuno","c","5"},
+                {"Em qual continente fica o Egito?","a) Europa","b) Ásia","c) Oceania","d) África","e) América","d", "5"},
+                {"Qual cientista formulou as três leis do movimento clássico?","a) Albert Einstein","b) Galileu Galilei","c) Isaac Newton","d) Nikola Tesla","e) Stephen Hawking","c", "7"},
+                {"Qual foi o primeiro país a lançar um satélite artificial ao espaço?","a) Estados Unidos","b) China","c) Alemanha","d) União Soviética","e) Japão","d","7"},
+                {"O tratado que encerrou oficialmente a Primeira Guerra Mundial foi:","a) Tratado de Tordesilhas","b) Tratado de Versalhes","c) Tratado de Utrecht","d) Tratado de Paris","e) Tratado de Viena","b","7"},
+                {"Qual elemento químico possui o símbolo “Au”?","a) Prata","b) Mercúrio","c) Ouro","d) Alumínio","e) Argônio","c","7"},
+                {"Qual país possui a maior floresta tropical do mundo em extensão territorial?","a) Indonésia","b) Congo","c) Peru","d) Brasil","e) Colômbia","d","7"},
+                {"Quem escreveu a obra “Dom Quixote”?","a) William Shakespeare","b) Machado de Assis","c) Miguel de Cervantes","d) José Saramago","e) Dante Alighieri","c","7"},
+                {"Qual foi a civilização responsável pela construção de Machu Picchu?","a) Asteca","d) Egípcia","d) Inca","e) Fenícia","d","7"},
+                {"Qual país foi o último a abolir oficialmente a escravidão nas Américas?","a) Cuba","b) Brasil","c) Haiti","c) Estados Unidos","e) República Dominicana","b","10"},
+                {"Qual matemático é considerado o “pai da computação” e propôs a Máquina de Turing?","a) John von Neumann","b) Blaise Pascal","c) Alan Turing","d) Charles Babbage","e) Claude Shannon","c","10"},
+                {"Qual império utilizava a cidade de Tenochtitlán como capital?","a) Maia","b) Inca","c) Asteca","d) Otomano","e) Persa","c","10"},
+                {"Qual é o único metal líquido em temperatura ambiente?","a) Gálio","b) Mercúrio","c) Césio","d) Bromo","e) Platina","b","10"},
+                {"Em qual ano ocorreu a queda do Império Romano do Ocidente?","a) 395 d.C.","b) 410 d.C.","c) 476 d.C.","d) 509 d.C.","e) 622 d.C.","c","10"}
 
         };
-
-        //1. indices guarda números:  [3, 0, 5, 1, 4, 2]
-        //2. remove(0) tira o 3 de indices
-        //3. indice = 3
-        //4. perguntas[3] → acessa a linha 3 da matriz
-        //5. perguntas continua com todas as 6 linhas intactas
 
         int indice = indices.remove(0);   // pega e remove o primeiro elemento da lista já embaralhada no main
 
