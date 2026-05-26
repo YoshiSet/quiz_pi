@@ -25,7 +25,7 @@ public class excibicao {
                     String nomeJogador = Projeto_quiz.funcoes_quiz.entradaNome();
 
                     ArrayList<Integer> indices = new ArrayList<>(); // cria a lista vazia
-                    for (int i = 0; i<6;i++){
+                    for (int i = 0; i<20;i++){
                         indices.add(i); // adiciona o valor de i na lista a cada volta
                     }
                     // resultado: indices = [0, 1, 2, 3, 4, 5]
@@ -34,7 +34,7 @@ public class excibicao {
                     Collections.shuffle(indices, random);
                     Projeto_quiz.funcoes_quiz.separador();
 
-                    for(int i = 0; i < 6; i++) {
+                    for(int i = 0; i < 20; i++) {
                         Projeto_quiz.funcoes_quiz.separador();
                         System.out.println("==============================================");
                         String[] perguntaSorteada = Projeto_quiz.funcoes_quiz.perguntasQuiz(random, indices); // sorteia a próxima pergunta sem repetir, usando o índice removido da lista embaralhada
@@ -53,6 +53,8 @@ public class excibicao {
                             System.out.println("SUA PONTUAÇÃO ATUAL É: "+ pontos);
                             errou++;
                         }
+                        System.out.println("Digite Enter para continuar");
+                        Projeto_quiz.funcoes_quiz.separaEntrada();
                     }
                     placar.add(new Projeto_quiz.funcoes_quiz.Jogador(nomeJogador, pontos));
 
@@ -78,7 +80,7 @@ public class excibicao {
                         System.out.println((i+1) + "º " + placar.get(i).nome + " — " + placar.get(i).pontos + " pts");
                     }
                     System.out.println("");
-                    System.out.println("Digite enter para voltar ao menu.");
+                    System.out.println("Digite Enter para voltar ao menu.");
                     Projeto_quiz.funcoes_quiz.separaEntrada();
 
                     Projeto_quiz.funcoes_quiz.separador();
